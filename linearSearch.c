@@ -6,7 +6,7 @@
  *    Project Title: Linear Search 
  *    Date: 2024-07-25
  *
- *    Description: This is a program to find an element from an array using        
+ *    Description: This is a C program to find an element from an array using        
  *    using the linear search algorithm and also calculate the space complexity
  *    and time complexity of the program.
  ***********************************************************************************/
