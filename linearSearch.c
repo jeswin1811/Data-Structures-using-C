@@ -1,3 +1,16 @@
+/***********************************************************************************
+ *                         Jeswin Thampichan Joseph
+ *            Computer Science and Engineering Student, SJCET, Palai
+ *                        Email: jeswintj16@gmail.com
+ *
+ *    Project Title: Linear Search 
+ *    Date: 2024-07-25
+ *
+ *    Description: This is a program to find an element from an array using        
+ *    using the linear search algorithm and also calculate the space complexity
+ *    and time complexity of the program.
+ ***********************************************************************************/
+
 #include<stdio.h>
 void main(){
     int timeComplexity=0;
