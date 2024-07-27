@@ -53,11 +53,13 @@ void main(){
         printf("Element found %d times\n",count);
         timeComplexity++;
     }
-    else printf("Element not found");{
+    else{
+        printf("Element not found");
         timeComplexity++;
         timeComplexity++;
     }
     spaceComplexity = (6*4)+(4*NumOfElements);
+    timeComplexity++;
     timeComplexity++;
     timeComplexity++;
     printf("The space complexity is %d\n",spaceComplexity);
