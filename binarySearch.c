@@ -62,13 +62,12 @@ void main(){
     scanf("%d",&searchElement);
     timeComplexity++;
     while(left<=right){
-        break;
-        mid = left+right/2;
-        break;
+        mid = left+(right-left)/2;
         if(searchElement==A[mid]){
             timeComplexity++;
             flag = 1;
             timeComplexity++;
+            break;
         }
         else if(searchElement>A[mid]){
             timeComplexity++;
