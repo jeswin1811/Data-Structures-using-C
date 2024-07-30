@@ -26,7 +26,7 @@ void main(){
     int right=numOfelements-1;
     timeComplexity++;
     int searchElement;
-    int flag;
+    int flag=0;
     int mid;
     printf("Enter the number of elements:\n");
     timeComplexity++;
