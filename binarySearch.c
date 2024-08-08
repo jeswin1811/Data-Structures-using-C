@@ -1,102 +1,117 @@
-
 /***********************************************************************************
  *                         Jeswin Thampichan Joseph
  *            Computer Science and Engineering Student, SJCET, Palai
  *                        Email: jeswintj16@gmail.com
  *
  *    Project Title: Binary Search 
- *    Date: 2024-07-27
+ *    Date: 2024-08-08
  *
  *    Description: This is a C program to find an element from an array using        
  *    using the binary search algorithm and also calculate the space complexity
  *    and time complexity of the program.             
  ***********************************************************************************/
-
 #include<stdio.h>
-void main(){
+ int main()
+ {
+    int n;     
+    int A[20];  
+    int i;      
+    int j;      
+    int temp; 
     int timeComplexity=0;
-    int spaceComplexity;
-    int numOfelements;
-    int A[30];
-    int i;
-    int j;
-    int temp;
-    int left=0;
+    timeComplexity++;  
+    printf("Enter the size of Array: ");
     timeComplexity++;
-    int right=numOfelements-1;
+    scanf("%d",&n);
     timeComplexity++;
-    int searchElement;
-    int flag=0;
-    int mid;
-    printf("Enter the number of elements:\n");
-    timeComplexity++;
-    scanf("%d",&numOfelements);
-    timeComplexity++;
-    printf("Enter the elements:\n");
-    timeComplexity++;
-    for(i=0;i<numOfelements;i++){
-        scanf("%d",&A[i]);
-        timeComplexity++;
-        timeComplexity++;
+    for(i=0;i<n;i++){
+       printf("Enter number %d : ",i+1);
+       scanf("%d",&A[i]);
+       timeComplexity++;
+       timeComplexity++;
+       timeComplexity++;
     }
     timeComplexity++;
-    for(i=0;i<numOfelements-1;i++){
-        for(j=0;j<numOfelements-1-i;j++){
+    printf("\n");
+    timeComplexity++;
+    for(i=0;i<n-1;i++){
+        for(j=0;j<n-i-1;j++){
             if(A[j]>A[j+1]){
                 temp = A[j];
-                A[j] = A[j+1];
-                A[j+1] = temp;
-                timeComplexity++;
+                A[j]=A[j+1];
+                A[j+1]=temp;
                 timeComplexity++;
                 timeComplexity++;
                 timeComplexity++;
             }
             timeComplexity++;
+            timeComplexity++;
         }
+        timeComplexity++;
+    }
+    timeComplexity++;
+    timeComplexity++;
+    printf("The sorted array is: \n");
+    timeComplexity++;
+    for (i = 0; i < n; i++){
+        printf("%d\t",A[i]);
         timeComplexity++;
         timeComplexity++;
     }
     timeComplexity++;
-    printf("Enter the search element:\n");
+    printf("\n");
     timeComplexity++;
-    scanf("%d",&searchElement);
+    int left = 0;  
+    timeComplexity++;     
+    int right = n-1;  
+    timeComplexity++;  
+    int mid;            
+    int x;              
+    int flag = 0; 
+    timeComplexity++;      
+    printf("Enter number to be searched\n");
     timeComplexity++;
-    while(left<=right){
-        mid = left+(right-left)/2;
-        if(searchElement==A[mid]){
-            timeComplexity++;
-            flag = 1;
-            timeComplexity++;
+    scanf("%d",&x);
+    timeComplexity++;
+    if(x < A[left] || x > A[right] ){
+      printf("%d is not found in the array ",x);
+      return 0;
+      timeComplexity++;
+      timeComplexity++;
+    }
+    timeComplexity++;
+    while(left <= right){
+        mid = (left + right)/2;
+        if(A[mid] == x){
+            flag = 2;    
             break;
-        }
-        else if(searchElement>A[mid]){
             timeComplexity++;
-            left = mid+1;
             timeComplexity++;
         }
-        else if(searchElement<A[mid]){
-            timeComplexity++;
-            right = mid-1;
+        else if (x < A[mid]){
+            right = mid - 1;
             timeComplexity++;
         }
-        timeComplexity++;
+        else if (x > A[mid]){
+            left = mid + 1;
+            timeComplexity++;
+        }  
+    }  
+    timeComplexity++;
+    timeComplexity++;
+    if(flag == 2){
+        printf("%d is found in the array at position %d\n",x,mid+1);
         timeComplexity++;
     }
     timeComplexity++;
-    if(flag==0){
-        timeComplexity++;
-        printf("Element not found.\n");
-        timeComplexity++;
-    }
-    else{
-        timeComplexity++;
-        printf("Element found.\n");
+    if(flag == 0){
+        printf("%d is not found in the array \n",x);
         timeComplexity++;
     }
-    spaceComplexity = (11*4)+(4*numOfelements);
     timeComplexity++;
     timeComplexity++;
     timeComplexity++;
-    printf("The time complexity is %d\n",timeComplexity);
-    printf("The space complexity is %d\n",spaceComplexity);
+    printf("Time Complexity = %d\n",timeComplexity);
+    printf("Space Complexity = %d\n",(10*4)+(4*n));
+    return 0;
 }
