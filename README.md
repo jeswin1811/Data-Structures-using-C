@@ -18,6 +18,7 @@ This repository aims to provide a comprehensive set of C programs using data str
 
 1. [Linear Search with space complexity and time complexity](linearSearch.c)
 2. [Binary Search with space complexity and time complexity](binarySearch.c)
+3. [Insertion sort with space complexity and time complexity](InsertionSort.c)
 
 ## Contact
 
