@@ -23,6 +23,7 @@ This repository aims to provide a comprehensive set of C programs using data str
 5. [Sparse Matrix](SparseMatrix.c)
 6. [Polynomial representation using array](poly.c)
 7. [Bubble sort with space complexity and time complexity](BubbleSort.c)
+8. [Queue Operations](queue.c)
 
 ## Contact
 
