@@ -21,6 +21,7 @@ This repository aims to provide a comprehensive set of C programs using data str
 3. [Insertion sort with space complexity and time complexity](InsertionSort.c)
 4. [Selection sort with space complexity and time complexity](SelectionSort.c)
 5. [Sparse Matrix](SparseMatrix.c)
+6. [Polynomial representation using array](poly.c)
 
 ## Contact
 
