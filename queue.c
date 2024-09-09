@@ -10,8 +10,10 @@
  *          	   various queue operations on it.
  ***********************************************************************************/
 #include<stdio.h>
-#define max 6
-int queue[max];
+int option;     
+int value;
+int max;
+int queue[40];
 int front = -1;
 int rear = -1;
 void enque(int value) {
@@ -56,25 +58,17 @@ void display() {
         printf("\n");
     } 
 }
-void peek() {
-    if(front == -1 && rear == -1) {
-        printf("Nothing to see here...\n");
-    } 
-    else {
-        printf("The element in the front of the queue is : %d\n",queue[front]);
-    }
-}
-int main() {
-    int option;     
-    int value;      
+
+int main() {    
+    printf("Enter the max size of queue: \n");
+    scanf("%d",&max);  
         printf("The operations that can be performed on a queue are listed below :\n");
         printf("1 -> Enqueue\n");
         printf("2 -> Dequeue\n");
         printf("3 -> Display\n");
-        printf("4 -> Peek\n");
-        printf("5 -> Exit\n");
+        printf("4 -> Exit\n");
     while (1) {
-        printf("Choose your operation (1/2/3/4/5):\n ");
+        printf("Choose your operation (1/2/3/4):\n ");
         scanf("%d",&option);
 
         switch (option) {
@@ -90,9 +84,6 @@ int main() {
                 display();
                 break;
             case 4:
-                peek();
-                break;
-            case 5:
                 printf("Exiting....\n");
                 return 0;
             default:
