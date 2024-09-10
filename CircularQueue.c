@@ -12,8 +12,8 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-#define Max_size 6
-int queue[Max_size];
+int n, item, Max_size;
+int queue[100];
 int front = -1;
 int rear = -1;
 
@@ -64,10 +64,12 @@ void display(){
 }
 
 void main(){
-	int n, item;
+    printf("Enter the max size of circular queue: ");
+    scanf("%d",&Max_size);
+    printf("****CIRCULAR QUEUE OPERATIONS****\n1. Enqueue (Add an element to queue)\n2. Dequeue (Remove an element from queue)\n3. Display\n4. Exit\n");
 	while(1){
-		printf("Choose operation to perform on queue:\n1. Enqueue (Add an element to queue)\n2. Dequeue (Remove an element from queue)\n3. Display\n4. Exit\n");
-		scanf("%d",&n);
+        printf("Enter your choice (1/2/3/4):\n");
+        scanf("%d",&n);
 		switch(n){
 			case 1:
 				printf("Enter the element you want to enqueue:");
@@ -81,6 +83,7 @@ void main(){
 				display();
 				break;
 			case 4:
+                printf("Exiting...");
 				exit(1);
 				break;
 			default:
@@ -88,5 +91,3 @@ void main(){
 		}
 	}
 }
-				
-
