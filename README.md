@@ -25,6 +25,7 @@ This repository aims to provide a comprehensive set of C programs using data str
 7. [Bubble sort with space complexity and time complexity](BubbleSort.c)
 8. [Queue](queue.c)
 9. [Circular Queue](CircularQueue.c)
+10. [Stack](Stack.c)
 
 ## Contact
 
