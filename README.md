@@ -26,6 +26,7 @@ This repository aims to provide a comprehensive set of C programs using data str
 8. [Queue](queue.c)
 9. [Circular Queue](CircularQueue.c)
 10. [Stack](Stack.c)
+11. [Conversion of infix expression to postfix using stack](InfixToPostfix.c)
 
 ## Contact
 
