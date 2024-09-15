@@ -72,7 +72,7 @@ int main(){
             }
         }
         else{
-            while ((top!=-1) && priority(stack[top] >= priority(*e)){
+            while (top!=-1 && priority(stack[top]) >= priority(*e)){
                 printf("%c ",pop());
             }
             push(*e);
