@@ -1,3 +1,14 @@
+/***********************************************************************************
+ *                         Jeswin Thampichan Joseph
+ *            Computer Science and Engineering Student, SJCET, Palai
+ *                        Email: jeswintj16@gmail.com
+ *
+ *    Project Title: Singly Linked List
+ *    Date: 2024-09-28
+ *
+ *    Description: This is a C program to implement singly linked list data 
+ *	 	           structure and perform operations on it.   
+ ***********************************************************************************/
 #include<stdio.h>
 #include<stdlib.h>
 
