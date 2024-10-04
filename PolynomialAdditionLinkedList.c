@@ -1,3 +1,14 @@
+/***********************************************************************************
+ *                         Jeswin Thampichan Joseph
+ *            Computer Science and Engineering Student, SJCET, Palai
+ *                        Email: jeswintj16@gmail.com
+ *
+ *    Project Title: Polynomial Addition using linked list
+ *    Date: 2024-10-4
+ *
+ *    Description: This is a C program to add two polynomials using singly linked 
+ *                 list.
+ ***********************************************************************************/
 #include<stdio.h>
 #include<stdlib.h>
 
