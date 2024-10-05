@@ -12,7 +12,7 @@ Welcome to the "Data Structures using C" repository! This repository contains a 
 
 ![pngegg](https://github.com/user-attachments/assets/a2c6e174-db93-4dcf-ba97-04b73cd7841f)
 
-This repository aims to provide a comprehensive set of C programs using data structures that can be used for learning and reference purposes. This is my journey as a beginner in data structures, you'll find useful examples and code snippets to enhance your understanding of Java.
+This repository aims to provide a comprehensive set of C programs using data structures that can be used for learning and reference purposes. This is my journey as a beginner in data structures, you'll find useful examples and code snippets to enhance your understanding of data structures.
 
 ## Programs
 
