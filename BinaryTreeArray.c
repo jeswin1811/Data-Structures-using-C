@@ -1,3 +1,14 @@
+/***********************************************************************************
+ *                         Jeswin Thampichan Joseph
+ *            Computer Science and Engineering Student, SJCET, Palai
+ *                        Email: jeswintj16@gmail.com
+ *
+ *    Project Title: Build a Binary Tree
+ *    Date: 2024-10-17
+ *
+ *    Description: This is a C program to build and implement a binary tree using
+ *                  using array.
+ ***********************************************************************************/
 #include<stdio.h>
 
 void build(int a[],int i,int item){
