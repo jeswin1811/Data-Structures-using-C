@@ -28,6 +28,7 @@ This repository aims to provide a comprehensive set of C programs using data str
 11. [Conversion of infix expression to postfix using stack](InfixToPostfix.c)
 12. [Singly Linked List](SinglyLinkedList.c)
 13. [Polynomial Addition using linked list](PolynomialAdditionLinkedList.c)
+14. [Build a Binary Tree](BinaryTreeArray.c)
 
 ## Contact
 
