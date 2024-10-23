@@ -3,7 +3,7 @@
  *            Computer Science and Engineering Student, SJCET, Palai
  *                        Email: jeswintj16@gmail.com
  *
- *    Project Title: Insertion Sort
+ *    Project Title: Bubble Sort
  *    Date: 2024-08-29
  *
  *    Description: This is a C program to sort an array using the bubble sort     
