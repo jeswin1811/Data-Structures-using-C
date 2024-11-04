@@ -30,6 +30,7 @@ This repository aims to provide a comprehensive set of C programs using data str
 13. [Singly Linked List](SinglyLinkedList.c)
 14. [Polynomial Addition using linked list](PolynomialAdditionLinkedList.c)
 15. [Build a Binary Tree](BinaryTreeArray.c)
+16. [Merge sort](MergeSort.c)
 
 ## Contact
 
