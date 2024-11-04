@@ -9,61 +9,32 @@
  *    Description: This is a C program to sort an array using the insertion sort     
  *    algorithm and also calculate the space complexity and time complexity.       
  ***********************************************************************************/
-#include<stdio.h>
-void main(){
-    int n,i,j,a[40],temp,TimeComplexity=0;
-    TimeComplexity++;
+#include <stdio.h>
+
+int main() {
+    int n, i, j, a[40], temp;
     printf("Enter the size of your array:\n");
-    TimeComplexity++;
-    scanf("%d",&n);
-    TimeComplexity++;
+    scanf("%d", &n);
     printf("Enter the elements:\n");
-    TimeComplexity++;
-    for(i=0;i<n;i++){
-        TimeComplexity++;
-        scanf("%d",&a[i]);
-        TimeComplexity++;
+    for (i = 0; i < n; i++) {
+        scanf("%d", &a[i]);
     }
-    TimeComplexity++;
     printf("The unsorted array is:\n");
-    TimeComplexity++;
-    for(i=0;i<n;i++){
-        TimeComplexity++;
-        printf("%d\t",a[i]);
-        TimeComplexity++;
+    for (i = 0; i < n; i++) {
+        printf("%d\t", a[i]);
     }
-    TimeComplexity++;
     printf("\n");
-    TimeComplexity++;
-    for(i=1;i<n;i++){
-        TimeComplexity++;
+    for (i = 1; i < n; i++) {
         temp = a[i];
-        TimeComplexity++;
-        for(j=i-1;j>=0;j--){
-            TimeComplexity++;
-            if(temp<a[j]){
-                a[j+1]=a[j];
-                TimeComplexity++;
-            }else break;
-            TimeComplexity++;
+        for (j = i - 1; j >= 0 && a[j] > temp; j--) {
+            a[j + 1] = a[j];
         }
-        TimeComplexity++;
-        a[j+1]=temp;
-        TimeComplexity++;
+        a[j + 1] = temp;
     }
-    TimeComplexity++;
     printf("The sorted array is:\n");
-    TimeComplexity++;
-    for(i=0;i<n;i++){
-        TimeComplexity++;
-        printf("%d\t",a[i]);
-        TimeComplexity++;
+    for (i = 0; i < n; i++) {
+        printf("%d\t", a[i]);
     }
-    TimeComplexity++;
     printf("\n");
-    TimeComplexity++;
-    TimeComplexity++;
-    TimeComplexity++;
-    printf("Time Complexity = %d\n",TimeComplexity);
-    printf("Space Complexity = ",(5*4)+(4*n));
+    return 0;
 }
