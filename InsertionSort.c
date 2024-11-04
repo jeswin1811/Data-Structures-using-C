@@ -7,7 +7,7 @@
  *    Date: 2024-08-09
  *
  *    Description: This is a C program to sort an array using the insertion sort     
- *    algorithm and also calculate the space complexity and time complexity.       
+ *                 algorithm.     
  ***********************************************************************************/
 #include <stdio.h>
 
