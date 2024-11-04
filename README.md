@@ -32,6 +32,7 @@ This repository aims to provide a comprehensive set of C programs using data str
 15. [Build a Binary Tree](BinaryTreeArray.c)
 16. [Merge sort](MergeSort.c)
 17. [Quick Sort](QuickSort.c)
+18. [Binary Tree - Array Representation and displaying the children of a node](BinaryTree1.c)
 
 ## Contact
 
